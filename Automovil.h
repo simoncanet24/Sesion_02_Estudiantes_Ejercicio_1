@@ -1,7 +1,11 @@
 #ifndef SESION_02_ESTUDIANTES_AUTOMOVIL_H
 #define SESION_02_ESTUDIANTES_AUTOMOVIL_H
 #include <string>
+#include <iostream>
+#include "Vehiculo.h"
 using namespace std;
+
+class Vehiculo;
 
 class Automovil: public Vehiculo
 {
@@ -11,19 +15,13 @@ protected:
     int year;
 public:
 
-    Automovil()
-    {
-        marca = "";
-        modelo = "";
-        year = 0;
-    };
+    Automovil();
 
-    Automovil(string mar, string mod, int yr)
-    {
-        marca = mar;
-        modelo = mod;
-        year = yr ;
-    };
+    Automovil(string marca, string modelo, int year);
+
+    void toString() override;
+    void tocarClaxon();
+
 };
 
 

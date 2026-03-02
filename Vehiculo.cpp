@@ -1,3 +1,4 @@
+#include <iostream>
 #include "Vehiculo.h"
 #include <string>
 using namespace std;
@@ -8,10 +9,10 @@ Vehiculo::Vehiculo()
     tipo="";
 };
 
-Vehiculo::Vehiculo(string nom, string tip)
+Vehiculo::Vehiculo(string nombre, string tipo)
 {
-    nombre=nom;
-    tipo=tip;
+    this->nombre=nombre;
+    this->tipo=tipo;
 };
 
 void Vehiculo::toString()

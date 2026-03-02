@@ -11,9 +11,9 @@ protected:
 public:
     Vehiculo();
 
-    Vehiculo(string nom, string tip);
+    Vehiculo(string nombre, string tipo);
 
-    void toString();
+    virtual void toString();
 
     virtual ~Vehiculo();
 };
